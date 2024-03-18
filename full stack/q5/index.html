@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Map Example</title>
+</head>
+<body>
+
+<div style="position: relative; width: 800px; margin: auto;">
+    <img src="your-image.jpg" alt="Map with Hotspots" usemap="#hotspots" style="max-width: 100%; height: auto;">
+    <div id="hotspot-info-1" style="display: none; position: absolute; top: 100px; left: 100px; background: rgba(255, 255, 255, 0.9); padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+        <h2>Hotspot 1 Information</h2>
+        <p>This is information related to hotspot 1.</p>
+    </div>
+    <div id="hotspot-info-2" style="display: none; position: absolute; top: 150px; left: 250px; background: rgba(255, 255, 255, 0.9); padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+        <h2>Hotspot 2 Information</h2>
+        <p>This is information related to hotspot 2.</p>
+    </div>
+</div>
+
+<map name="hotspots">
+    <area shape="rect" coords="100,100,200,200" alt="Hotspot 1" onmouseover="document.getElementById('hotspot-info-1').style.display = 'block';" onmouseout="document.getElementById('hotspot-info-1').style.display = 'none';">
+    <area shape="circle" coords="300,200,50" alt="Hotspot 2" onmouseover="document.getElementById('hotspot-info-2').style.display = 'block';" onmouseout="document.getElementById('hotspot-info-2').style.display = 'none';">
+</map>
+
+</body>
+</html>

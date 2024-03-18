@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML5 Tags Demonstration</title>
+</head>
+<body>
+    
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<audio controls>
+  <source src="audio.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+<header>
+  <h1>This is a Header</h1>
+  <p>Header content goes here</p>
+</header>
+<footer>
+  <p>This is a Footer</p>
+  <p>Footer content goes here</p>
+</footer>
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+<embed src="document.pdf" width="500" height="375" type='application/pdf'>
+
+
+<label for="browser">Choose your browser:</label>
+<input list="browsers" id="browser" name="browser">
+<datalist id="browsers">
+  <option value="Chrome">
+  <option value="Firefox">
+  <option value="Edge">
+  <option value="Safari">
+  <option value="Opera">
+</datalist>
+<p>This is <bdi>not bolded</bdi>, this <bdi>شركة</bdi> is.</p>
+<article>
+  <h2>Article Title</h2>
+  <p>Article content goes here.</p>
+</article>
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  <input type="number" id="a" value="0">
+  +
+  <input type="number" id="b" value="0">
+  =
+  <output name="x" for="a b">0</output>
+</form>
+<form>
+  <label for="uname">Username:</label>
+  <input type="text" id="uname" name="uname" required><br><br>
+  <keygen name="auth">
+  <input type="submit">
+</form>
+
+</body>
+</html>

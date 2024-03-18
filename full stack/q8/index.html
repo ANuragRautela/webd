@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Profile</title>
+</head>
+<body>
+
+<h1>Customer Profile</h1>
+
+<form action="#" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" required></textarea><br><br>
+    
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" required><br><br>
+    
+    <label for="gender">Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label><br><br>
+    
+    <label for="roomType">Room Type:</label><br>
+    <select id="roomType" name="roomType" required>
+        <option value="AC">A/C</option>
+        <option value="Non-AC">Non A/C</option>
+        <option value="Deluxe">Deluxe</option>
+    </select><br><br>
+    
+    <label for="paymentType">Type of Payment:</label><br>
+    <input type="radio" id="cash" name="paymentType" value="cash" required>
+    <label for="cash">Cash</label><br>
+    <input type="radio" id="card" name="paymentType" value="card" required>
+    <label for="card">Credit/Debit Card</label><br>
+    <input type="radio" id="coupons" name="paymentType" value="coupons" required>
+    <label for="coupons">Coupons</label><br><br>
+    
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
